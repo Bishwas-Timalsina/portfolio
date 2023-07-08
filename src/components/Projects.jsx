@@ -89,7 +89,7 @@ const Projects = () => {
                                     <button >GIthub</button>
                                 </Link>
                                 <Link className='text-ctaPrimary bg-textPrimary hover:bg-ctaHover px-2 py-1 rounded-md col-span-1 text-center'
-                                    to='https://react-recipe-360.onrender.com/' target='_blank'
+                                    to='https://weather360-i948.onrender.com/' target='_blank'
                                 >
                                     <button>View Live</button>
                                 </Link>
