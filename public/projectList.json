@@ -1,0 +1,62 @@
+[
+
+    {
+        "name": "Movie360",
+        "technologyUsed": [
+            "HTML",
+            "CSS",
+            "JS"
+        ],
+        "image": "/src/files/crud.png",
+        "githubLink": "#",
+        "liveLink": "#",
+        "api": "tmdbAPI"
+    },
+    {
+        "name": "MERN CRUD App",
+        "technologyUsed": [
+            "ReactJS",
+            "MongoDB",
+            "ExpressJS",
+            "NodeJS",
+            "Tailwind CSS"
+        ],
+        "image": "project1.png",
+        "githubLink": "#",
+        "liveLink": "#",
+        "api": "REST API created"
+    },
+    {
+        "name": "Recipe360",
+        "technologyUsed": [
+            "ReactJS",
+            "Tailwind CSS"
+        ],
+        "image": "project1.png",
+        "githubLink": "#",
+        "liveLink": "#",
+        "api": "mealDB"
+    },
+    {
+        "name": "weather360",
+        "technologyUsed": [
+            "ReactJS",
+            "Tailwind CSS"
+        ],
+        "image": "project1.png",
+        "githubLink": "#",
+        "liveLink": "#",
+        "api": "mealDB"
+    },
+    {
+        "name": "Portfolio",
+        "technologyUsed": [
+            "ReactJS",
+            "Tailwind CSS"
+        ],
+        "image": "project1.png",
+        "githubLink": "#",
+        "liveLink": "#",
+        "api": ""
+    }
+]
