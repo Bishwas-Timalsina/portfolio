@@ -28,12 +28,12 @@ const Projects = () => {
                                 <p className='text-xl text-textPrimary col-span-2 '>MERN CRUD App</p>
                                 <p className='col-span-2 text-textPrimary'>Technology: MERN Stack & RESTApi</p>
                                 <Link className='text-ctaPrimary bg-textPrimary hover:bg-ctaHover px-2 py-1 rounded-md col-span-1 text-center'
-                                    to='https://github.com/Bishwas-Timalsina/mern-crud-backend' target='_blank'
+                                    to='https://github.com/Bishwas-Timalsina/mern-crud-frontend' target='_blank'
                                 >
                                     <button >GIthub</button>
                                 </Link>
                                 <Link className='text-ctaPrimary bg-textPrimary hover:bg-ctaHover px-2 py-1 rounded-md col-span-1 text-center'
-                                    to='https://github.com/Bishwas-Timalsina/mern-crud-backend' target='_blank'
+                                    to='https://crud-frontend-5qcl.onrender.com/' target='_blank'
                                 >
                                     <button>View Live</button>
                                 </Link>
@@ -53,7 +53,7 @@ const Projects = () => {
                                     <button >GIthub</button>
                                 </Link>
                                 <Link className='text-ctaPrimary bg-textPrimary hover:bg-ctaHover px-2 py-1 rounded-md col-span-1 text-center'
-                                    to='https://github.com/Bishwas-Timalsina/react-recipe360' target='_blank'
+                                    to='https://react-recipe-360.onrender.com/' target='_blank'
                                 >
                                     <button>View Live</button>
                                 </Link>
@@ -71,7 +71,7 @@ const Projects = () => {
                                     <button >GIthub</button>
                                 </Link>
                                 <Link className='text-ctaPrimary bg-textPrimary hover:bg-ctaHover px-2 py-1 rounded-md col-span-1 text-center'
-                                    to='https://github.com/Bishwas-Timalsina/movie360' target='_blank'
+                                    to='https://movie360.onrender.com/' target='_blank'
                                 >
                                     <button>View Live</button>
                                 </Link>
@@ -106,7 +106,7 @@ const Projects = () => {
                                     <button >GIthub</button>
                                 </Link>
                                 <Link className='text-ctaPrimary bg-textPrimary hover:bg-ctaHover px-2 py-1 rounded-md col-span-1 text-center'
-                                    to='https://github.com/Bishwas-Timalsina/weatherAPP' target='_blank'
+                                    to='https://bishwastimalsina.com.np/' target='_blank'
                                 >
                                     <button>View Live</button>
                                 </Link>
@@ -123,7 +123,7 @@ const Projects = () => {
                                     <button >GIthub</button>
                                 </Link>
                                 <Link className='text-ctaPrimary bg-textPrimary hover:bg-ctaHover px-2 py-1 rounded-md col-span-1 text-center'
-                                    to='https://github.com/Bishwas-Timalsina/netflix-clone' target='_blank'
+                                    to='https://netflix-clone-8jhh.onrender.com/' target='_blank'
                                 >
                                     <button>View Live</button>
                                 </Link>
