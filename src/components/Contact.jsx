@@ -3,7 +3,7 @@ import React from 'react'
 const Contact = () => {
     return (
         <>
-            <div className='flex flex-col justify-center items-center '>
+            <div className='h-[80vh] flex flex-col justify-center items-center ' id='contacts'>
                 <div className='max-w-7xl mx-auto py-4 flex flex-col justify-center items-center gap-8 w-[50%]'>
                     <p className='mt-4 text-2xl text-center font-[500]'>Get in <span className='text-ctaPrimary'> Touch</span></p>
 

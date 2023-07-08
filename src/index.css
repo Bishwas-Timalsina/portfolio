@@ -3,22 +3,35 @@
 @tailwind utilities;
 
 
-:root{
-  --nav-color:#111655;
-  --bg-color:#dcecfd;
-  --text-primary:#d9e8ff;
-  --text-secondary:#1c2793;
-  --cta-primary:#111655;
-  --cta-secondary:#678aff;
-  --cta-hover:#92b6ff;
+:root {
+  --nav-color: #111655;
+  --bg-color: #dcecfd;
+  --text-primary: #d9e8ff;
+  --text-secondary: #1c2793;
+  --cta-primary: #111655;
+  --cta-secondary: #678aff;
+  --cta-hover: #92b6ff;
 
 
 }
 
-body{
-  margin:0;
+body {
+  margin: 0;
   padding: 0;
   box-sizing: border-box;
   background-color: var(--bg-color);
-  
 }
+
+#projects {
+  position: relative;
+  /* Add position relative to establish a new stacking context */
+  z-index: 0;
+  /* Set a lower z-index to keep the navbar on top */
+}
+
+/* Adjust the z-index of the navbar to make it appear on top */
+.navbar {
+  z-index: 1;
+  /* Increase the z-index to keep the navbar above other elements */
+}
+

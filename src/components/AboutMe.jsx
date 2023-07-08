@@ -1,10 +1,20 @@
 import React from 'react'
 import image from '../files/IMG-20230209-WA0000.jpg'
+import { AiOutlineDownload } from 'react-icons/ai'
 
 const AboutMe = () => {
+    const handleDownload = () => {
+        const url = `${process.env.PUBLIC_URL}/resume.pdf`;
+        const link = document.createElement('a');
+        link.href = url;
+        link.setAttribute('download', 'resume.pdf');
+        document.body.appendChild(link);
+        link.click();
+        document.body.removeChild(link);
+    }
     return (
         <>
-            <div className='flex flex-col justify-center items-center bg-nav'>
+            <div className='flex flex-col justify-center items-center bg-nav' id='about'>
                 <div className='max-w-7xl mx-auto grid grid-cols-12 justify-between items-center gap-8 py-12'>
                     <div className='col-span-6'>
                         <img src={image} alt="" className='w-[70%] rounded-lg' />
@@ -16,7 +26,10 @@ const AboutMe = () => {
                         <p className='text-textPrimary text-4xl'>About me</p>
                         <p className='text-lg text-textPrimary'>MERN Stack Developer, I create dynamic web application to help your business achieve technological advancement.
                             I can build responsive, visually appealing website with UI/UX interface.</p>
-                        <button className='bg-ctaSecondary text-white text-2xl px-2 py-1 rounded-md hover:bg-ctaHover w-[20%]'>Let's Talk</button>
+                        <button className='bg-ctaSecondary text-white text-xl px-2 py-1 rounded-md hover:bg-ctaHover w-[20%] flex items-center gap-2'
+                            onClick={handleDownload}>
+                            Resume <AiOutlineDownload />
+                        </button>
 
                     </div>
                 </div>

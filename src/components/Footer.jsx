@@ -15,7 +15,6 @@ const Footer = () => {
                     </div>
                     <div className='col-span-6 flex flex-row justify-center item-center gap-4'>
                         <button className='bg-textPrimary text-ctaPrimary hover:bg-ctaHover text-xl font-[400] p-1 rounded-[60%] hover:bg-ctasec text-md'><AiOutlineGithub /></button>
-                        <button className='bg-textPrimary text-ctaPrimary hover:bg-ctaHover text-xl font-[400] p-1 rounded-[60%] hover:bg-ctasec text-md'><AiOutlineMail /></button>
                         <button className='bg-textPrimary text-ctaPrimary hover:bg-ctaHover text-xl font-[400] p-1 rounded-[60%] hover:bg-ctasec text-md'><AiOutlineLinkedin /></button>
                         <button className='bg-textPrimary text-ctaPrimary hover:bg-ctaHover text-xl font-[400] p-1 rounded-[60%] hover:bg-ctasec text-md'><AiOutlineInstagram /></button>
                     </div>

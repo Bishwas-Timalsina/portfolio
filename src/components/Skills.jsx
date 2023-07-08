@@ -4,6 +4,7 @@ import { AiOutlineHtml5 } from 'react-icons/ai'
 import { FaCss3Alt, FaReact, FaBootstrap } from 'react-icons/fa6'
 import { BiLogoJavascript, BiLogoMongodb, BiLogoTailwindCss, BiLogoNodejs, BiLogoGit } from 'react-icons/bi'
 import { SiExpress } from 'react-icons/si'
+import { Link } from 'react-scroll'
 
 
 
@@ -11,7 +12,7 @@ const Skills = () => {
     return (
 
         <>
-            <div className='h-[70vh] flex flex-col justify-center items-center'>
+            <div className='h-[90vh] flex flex-col justify-center items-center' id='skills'>
                 <div className='max-w-7xl mx-auto grid grid-cols-12 justify-between items-center gap-12 py-12'>
                     <div className='col-span-6 flex flex-col leading-8 gap-y-2'>
                         <p className='text-2xl font-[500]'>My
@@ -20,7 +21,10 @@ const Skills = () => {
                         <p className='text-xl'>
                             Skills I have acquired to develop dynamic webpages and web application.
                         </p>
-                        <button className='bg-ctaPrimary text-textPrimary px-2 py-1 rounded-md hover:bg-ctaSecondary w-[40%]'>See Projects</button>
+                        <Link to="projects" smooth={true} duration={500}>
+                            <button className='bg-ctaPrimary text-textPrimary px-2 py-1 rounded-md hover:bg-ctaSecondary w-[40%]'>See Projects</button>
+                        </Link>
+
                     </div>
 
                     <div className='col-span-6'>
