@@ -13,25 +13,31 @@ const Contact = () => {
     const templateID = 'contactForm';
     const handleSubmit = (event) => {
         event.preventDefault();
-        console.log(formData)
-        emailjs.send(serviceID, templateID, {
-            from_name: formData.name,
-            to_name: "Bishwas Timalsina",
-            message: formData.message,
-            reply_to: formData.email,
-        }, publicKey)
-            .then(() => {
-                console.log('Form Submitted')
-                setFromData({
-                    name: '',
-                    email: '',
-                    message: ''
+        if (formData.name || formData.email || formData.message) {
+            emailjs.send(serviceID, templateID, {
+                from_name: formData.name,
+                to_name: "Bishwas Timalsina",
+                message: formData.message,
+                reply_to: formData.email,
+            }, publicKey)
+                .then(() => {
+                    console.log('Form Submitted')
+                    setFromData({
+                        name: '',
+                        email: '',
+                        message: ''
+                    })
+                    window.alert("Email Sent Successfully")
                 })
-                window.alert("Email Sent Successfully")
-            })
-            .catch((e) => {
-                console.log("Error", e)
-            })
+                .catch((e) => {
+                    console.log("Error", e)
+                })
+        }
+        else{
+            window.alert("Please Fill Out the Field")
+        }
+
+
     }
     const handleInputChange = (event) => {
         const { name, value } = event.target
@@ -52,14 +58,17 @@ const Contact = () => {
                         <input type="text" name='name'
                             onChange={handleInputChange}
                             value={formData.name}
+                            required='true'
                             placeholder='Enter Your name' className='col-span-6 h-[46px] px-2 outline-none rounded-md bg-[#8d8d8d] caret-white placeholder:text-white' />
                         <input type="email" name='email'
                             onChange={handleInputChange}
                             value={formData.email}
+                            required='true'
                             placeholder='Enter Your Email' className='col-span-6 h-[46px] px-2 outline-none rounded-md bg-[#8d8d8d] caret-white placeholder:text-white' />
                         <textarea placeholder='Enter Your Message' name='message'
                             onChange={handleInputChange}
                             value={formData.message}
+                            required='true'
                             className='col-span-12 h-[200px] outline-none rounded-md bg-[#8d8d8d] caret-white placeholder:text-white px-2 py-3' />
                         <input type="submit" value='Submit' className='bg-ctaPrimary rounded-md mx-auto text-white tet-2xl font-[500] col-span-12 px-4 py-2' />
 
