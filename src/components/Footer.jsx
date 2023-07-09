@@ -1,5 +1,5 @@
 import React from 'react'
-import { AiOutlineLinkedin, AiOutlineGithub, AiOutlineMail,AiOutlineInstagram } from 'react-icons/ai'
+import { AiOutlineLinkedin, AiOutlineGithub, AiOutlineMail, AiOutlineInstagram } from 'react-icons/ai'
 
 const Footer = () => {
     return (
@@ -14,9 +14,17 @@ const Footer = () => {
                         </p>
                     </div>
                     <div className='col-span-6 flex flex-row justify-center item-center gap-4'>
-                        <button className='bg-textPrimary text-ctaPrimary hover:bg-ctaHover text-xl font-[400] p-1 rounded-[60%] hover:bg-ctasec text-md'><AiOutlineGithub /></button>
-                        <button className='bg-textPrimary text-ctaPrimary hover:bg-ctaHover text-xl font-[400] p-1 rounded-[60%] hover:bg-ctasec text-md'><AiOutlineLinkedin /></button>
-                        <button className='bg-textPrimary text-ctaPrimary hover:bg-ctaHover text-xl font-[400] p-1 rounded-[60%] hover:bg-ctasec text-md'><AiOutlineInstagram /></button>
+
+                        <a href="https://github.com/bishwas-timalsina" target='_blank'>
+                            <button className='bg-ctaPrimary p-2 rounded-[60%] hover:bg-ctaSecondary text-2xl text-textPrimary'><AiOutlineGithub /></button>
+                        </a>
+
+                        <a href="https://m.facebook.com/profile.php?id=100006942044685" target='_blank'>
+                            <button className='bg-ctaPrimary p-2 rounded-[60%] hover:bg-ctaSecondary text-2xl text-textPrimary'><BiLogoFacebook /></button>
+                        </a>
+                        <a href="https://www.linkedin.com/in/bishwas-timalsina-110a59234" target='_blank'>
+                            <button className='bg-ctaPrimary p-2 rounded-[60%] hover:bg-ctaSecondary text-2xl text-textPrimary'><AiOutlineLinkedin /></button>
+                        </a>
                     </div>
                     <div className='col-span-4 flex justify-end'>
                         <p className='text-[#757575] text-sm'>Copyright Bishwas Timalsina. All rights reserved</p>
