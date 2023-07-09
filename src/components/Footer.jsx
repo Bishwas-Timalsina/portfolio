@@ -1,5 +1,6 @@
 import React from 'react'
-import { AiOutlineLinkedin, AiOutlineGithub, AiOutlineMail, AiOutlineInstagram } from 'react-icons/ai'
+import { AiOutlineLinkedin, AiOutlineGithub} from 'react-icons/ai'
+import {BiLogoFacebook} from 'react-icons/bi'
 
 const Footer = () => {
     return (
