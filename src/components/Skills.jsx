@@ -13,7 +13,7 @@ const Skills = () => {
 
         <>
             <div className='h-[90vh] flex flex-col justify-center items-center' id='skills'>
-                <div className='max-w-7xl mx-auto grid md:grid-cols-12 grid-cols-4 justify-between items-center gap-12 py-12'>
+                <div className='max-w-7xl mx-auto grid md:grid-cols-12 grid-cols-4 justify-between items-center gap-12 py-12 mt-4 md:my-0'>
                     <div className='md:col-span-6 col-span-4 flex flex-col justify-center items-center leading-8 gap-y-2'>
                         <p className='text-2xl font-[500]'>My
                             <span className='text-textSec'> Skills</span>

@@ -8,13 +8,13 @@ import { Link } from 'react-scroll'
 const HeroSection = () => {
     return (
         <>
-            <div className='h-[100vh] flex flex-col justify-center items-center' id='home'>
-                <div className='max-w-7xl mx-auto grid md:grid-cols-12 grid-cols-4 justify-between items-center gap-12 py-12'>
+            <div className='md:h-[120vh] flex flex-col justify-center items-center' id='home'>
+                <div className='max-w-7xl mx-auto grid md:grid-cols-12 grid-cols-4 justify-between items-center gap-12 py-12 my-24 md:my-0'>
                     <div className='md:col-span-6 col-span-4 flex flex-col justify-center md:items-start items-center leading-8 gap-y-4 md:px-0 px-12'>
                         <p className='text-2xl font-[500]'>Hello,
                             <span className='text-textSec'> I'm</span>
                         </p>
-                        <p className='text-textSec text-4xl'>Bishwas Timalsina</p>
+                        <p className='text-textSec text-4xl text-center md:text-left'>Bishwas Timalsina</p>
                         <p className='text-2xl'>Web Developer</p>
                         <p className='text-xl text-center md:text-left'>MERN Stack Developer focused on crafting immersive web applications with an emphasis on user satisfaction.</p>
 
