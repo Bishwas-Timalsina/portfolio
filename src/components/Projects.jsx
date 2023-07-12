@@ -20,7 +20,7 @@ const Projects = () => {
                     </p>
                     <img src={require('../files/crud.png').default} alt="" />
 
-                    <div className='grid grid-cols-12 justify-between items-center gap-x-12 gap-y-12 mt-8 z-10'>
+                    <div className='grid md:grid-cols-12 grid-cols-4 justify-between items-center gap-x-12 gap-y-12 mt-8 z-10 md:px-0 px-12'>
 
                         <div className='col-span-4 rounded-lg '>
                             <img src={image1} alt='' className='h-[200px] brightness-75 z-1' />

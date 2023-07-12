@@ -13,22 +13,22 @@ const Skills = () => {
 
         <>
             <div className='h-[90vh] flex flex-col justify-center items-center' id='skills'>
-                <div className='max-w-7xl mx-auto grid grid-cols-12 justify-between items-center gap-12 py-12'>
-                    <div className='col-span-6 flex flex-col leading-8 gap-y-2'>
+                <div className='max-w-7xl mx-auto grid md:grid-cols-12 grid-cols-4 justify-between items-center gap-12 py-12'>
+                    <div className='md:col-span-6 col-span-4 flex flex-col justify-center items-center leading-8 gap-y-2'>
                         <p className='text-2xl font-[500]'>My
                             <span className='text-textSec'> Skills</span>
                         </p>
-                        <p className='text-xl'>
+                        <p className='text-xl text-center'>
                             Skills I have acquired to develop dynamic webpages and web application.
                         </p>
                         <Link to="projects" smooth={true} duration={500}>
-                            <button className='bg-ctaPrimary text-textPrimary px-2 py-1 rounded-md hover:bg-ctaSecondary w-[40%]'>See Projects</button>
+                            <button className='bg-ctaPrimary text-textPrimary px-2 py-1 rounded-md hover:bg-ctaSecondary'>See Projects</button>
                         </Link>
 
                     </div>
 
-                    <div className='col-span-6'>
-                        <div className='grid grid-cols-12 justify-between gap-x-2'>
+                    <div className='md:col-span-6 col-span-4 '>
+                        <div className='grid grid-cols-12 justify-between gap-x-2 md:mx-0 mx-6'>
                             <div className='col-span-6 flex flex-col gap-4'>
                                 <div className='text-[24px] text-ctaPrimary col-span-2 flex items-center gap-1'><AiOutlineHtml5 />HTML5</div>
                                 <div className='text-[24px] text-ctaPrimary col-span-2 flex items-center gap-1'><FaCss3Alt />CSS3</div>

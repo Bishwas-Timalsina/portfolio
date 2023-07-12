@@ -9,17 +9,17 @@ const HeroSection = () => {
     return (
         <>
             <div className='h-[100vh] flex flex-col justify-center items-center' id='home'>
-                <div className='max-w-7xl mx-auto grid grid-cols-12 justify-between items-center gap-12 py-12'>
-                    <div className='col-span-6 flex flex-col leading-8 gap-y-4'>
+                <div className='max-w-7xl mx-auto grid md:grid-cols-12 grid-cols-4 justify-between items-center gap-12 py-12'>
+                    <div className='md:col-span-6 col-span-4 flex flex-col justify-center md:items-start items-center leading-8 gap-y-4 md:px-0 px-12'>
                         <p className='text-2xl font-[500]'>Hello,
                             <span className='text-textSec'> I'm</span>
                         </p>
                         <p className='text-textSec text-4xl'>Bishwas Timalsina</p>
                         <p className='text-2xl'>Web Developer</p>
-                        <p className='text-xl'>MERN Stack Developer focused on crafting immersive web applications with an emphasis on user satisfaction.</p>
+                        <p className='text-xl text-center md:text-left'>MERN Stack Developer focused on crafting immersive web applications with an emphasis on user satisfaction.</p>
 
                         <Link to="contacts" smooth={true} duration={500}>
-                            <button className='bg-ctaPrimary text-textPrimary text-2xl px-2 py-1 rounded-md hover:bg-ctaSecondary w-[20%]'>Let's Talk</button>
+                            <button className='bg-ctaPrimary text-textPrimary text-2xl px-2 py-1 rounded-md hover:bg-ctaSecondary '>Let's Talk</button>
                         </Link>
 
 
@@ -39,7 +39,7 @@ const HeroSection = () => {
                         </div>
                     </div>
 
-                    <div className='col-span-6 flex justify-end'>
+                    <div className='md:col-span-6 col-span-4 flex md:justify-end justify-center'>
                         <img src={image} alt="" className='w-[70%] rounded-lg' />
                     </div>
                 </div>
