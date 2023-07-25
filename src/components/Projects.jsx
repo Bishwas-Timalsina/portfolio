@@ -5,6 +5,7 @@ import image3 from '../files/movies.jpg';
 import image4 from '../files/weather.jpg';
 import image5 from '../files/portfolio.jpg';
 import image6 from '../files/netflix.png';
+import image7 from '../files/ecommerce.png'
 
 import { Link } from 'react-router-dom'
 import Loading from './Loading';
@@ -129,8 +130,25 @@ const Projects = () => {
                                 </Link>
                             </div>
                         </div>
+                        <div className='col-span-4 rounded-lg' >
+                            <img src={image7} alt='' className='h-[200px] brightness-75' />
+                            <div className='grid grid-cols-2 gap-x-2 gap-y-2' >
+                                <p className='text-xl text-textPrimary col-span-2 '>Ecommerce Website</p>
+                                <p className='col-span-2 text-textPrimary'>Technology: ReactJS, TailwindCSS, react-query and fakestoreAPI</p>
+                                <Link className='text-ctaPrimary bg-textPrimary hover:bg-ctaHover px-2 py-1 rounded-md col-span-1 text-center'
+                                    to='https://github.com/Bishwas-Timalsina/ecommerce' target='_blank'
+                                >
+                                    <button >GIthub</button>
+                                </Link>
+                                <Link className='text-ctaPrimary bg-textPrimary hover:bg-ctaHover px-2 py-1 rounded-md col-span-1 text-center'
+                                    to='https://ecommerce-sable-gamma.vercel.app/' target='_blank'
+                                >
+                                    <button>View Live</button>
+                                </Link>
+                            </div>
+                        </div>
 
-                        
+
                     </div>
                 </div>
             </div >
